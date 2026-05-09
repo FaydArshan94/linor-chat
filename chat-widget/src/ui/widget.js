@@ -188,7 +188,22 @@ export function createWidget(shadow, config, { onDestroy } = {}) {
   });
 
   bus.on('close', () => {
-    destroyWidget();
+    closeWidget();
+    // ── New-chat reset ────────────────────────────────────────────────────────
+    // Clear the persisted session so the next open starts fresh with no history.
+    session.clear();
+    const newSessionId = session.createNew();
+    config.sessionId = newSessionId;
+    store.setState({
+      sessionId: newSessionId,
+      messages: [],
+      status: 'idle',
+      error: null,
+      transferState: 'none',
+      agentName: null,
+      unreadCount: 0,
+    });
+    // ─────────────────────────────────────────────────────────────────────────
   });
 
   bus.on('send', (text) => {
