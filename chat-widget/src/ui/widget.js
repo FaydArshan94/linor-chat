@@ -26,16 +26,16 @@ import { createEventBus } from '../utils/events.js';
 import { generateId } from '../utils/uid.js';
 import { createFocusTrap } from '../utils/a11y.js';
 
-import { baseStyles }     from './styles/base.css.js';
-import { widgetStyles }   from './styles/widget.css.js';
+import { baseStyles } from './styles/base.css.js';
+import { widgetStyles } from './styles/widget.css.js';
 import { messagesStyles } from './styles/messages.css.js';
-import { inputStyles }    from './styles/input.css.js';
+import { inputStyles } from './styles/input.css.js';
 
-import { createLauncher }      from './components/launcher.js';
-import { createHeader }        from './components/header.js';
-import { createMessages }      from './components/messages.js';
-import { createInput }         from './components/input.js';
-import { createErrorBanner }   from './components/error.js';
+import { createLauncher } from './components/launcher.js';
+import { createHeader } from './components/header.js';
+import { createMessages } from './components/messages.js';
+import { createInput } from './components/input.js';
+import { createErrorBanner } from './components/error.js';
 import { createOfflineBanner } from './components/offline.js';
 
 /**
@@ -112,8 +112,8 @@ export function createWidget(shadow, config) {
     createInitialState(sessionId, persistedMessages, {
       sttSupported: voice.sttSupported,
       ttsSupported: voice.ttsSupported,
-      ttsEnabled:   voice.ttsSupported && config.enableTTS !== false && !!config.ttsDefaultOn,
-      online:       netMonitor.isOnline(),
+      ttsEnabled: voice.ttsSupported && config.enableTTS !== false && !!config.ttsDefaultOn,
+      online: netMonitor.isOnline(),
     })
   );
 
@@ -539,22 +539,22 @@ export function createWidget(shadow, config) {
     document.removeEventListener('keydown', handleEscapeKey);
     bus.clear();
     persistTimer && clearTimeout(persistTimer);
-    try { unsubscribeNet(); } catch {}
-    try { netMonitor.destroy(); } catch {}
-    try { voice.destroy(); } catch {}
-    try { sounds.destroy(); } catch {}
-    try { destroyHeader(); } catch {}
-    try { destroyOffline(); } catch {}
-    try { if (agentSocket) agentSocket.disconnect(); } catch {}
+    try { unsubscribeNet(); } catch { }
+    try { netMonitor.destroy(); } catch { }
+    try { voice.destroy(); } catch { }
+    try { sounds.destroy(); } catch { }
+    try { destroyHeader(); } catch { }
+    try { destroyOffline(); } catch { }
+    try { if (agentSocket) agentSocket.disconnect(); } catch { }
   }
 
   return {
-    open:    openWidget,
-    close:   closeWidget,
-    toggle:  () => (store.getState().isOpen ? closeWidget() : openWidget()),
+    open: openWidget,
+    close: closeWidget,
+    toggle: () => (store.getState().isOpen ? closeWidget() : openWidget()),
     destroy: destroyWidget,
-    on:      (event, fn) => bus.on(event, fn),
-    off:     (event, fn) => bus.off(event, fn),
+    on: (event, fn) => bus.on(event, fn),
+    off: (event, fn) => bus.off(event, fn),
     getState: () => ({ ...store.getState() }),
   };
 }
