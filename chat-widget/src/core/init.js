@@ -48,18 +48,19 @@ export function initWidget(config) {
   // Mount to body — safely, after the current script finishes
   document.body.appendChild(host);
 
-  // Hand off to the Widget root component; get back the public API
-  const api = createWidget(shadow, config);
-
-  // Wrap destroy to also physically remove the host element from the DOM
-  const innerDestroy = api.destroy;
-  api.destroy = () => {
-    innerDestroy();
-    host.remove();
-    if (typeof window !== 'undefined' && window.LinorWidget === api) {
-      delete window.LinorWidget;
-    }
-  };
+  // Hand off to the Widget root component; get back the public API.
+  // Pass an onDestroy callback so destroyWidget() (called by the close button
+  // OR externally) always cleans up the host element and window reference.
+  // Note: `api` is captured by the closure and is always assigned before
+  // onDestroy can possibly fire (it fires only on a user interaction).
+  const api = createWidget(shadow, config, {
+    onDestroy: () => {
+      host.remove();
+      if (typeof window !== 'undefined' && window.LinorWidget === api) {
+        delete window.LinorWidget;
+      }
+    },
+  });
 
   return api;
 }
