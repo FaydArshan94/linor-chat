@@ -44,7 +44,7 @@ import { createOfflineBanner } from './components/offline.js';
  * @param {ShadowRoot} shadow — closed shadow root created by init.js
  * @param {object}     config — parsed widget configuration
  */
-export function createWidget(shadow, config) {
+export function createWidget(shadow, config, { onDestroy } = {}) {
   // ── 1. Styles ──────────────────────────────────────────────────────────────
 
   const styleEl = document.createElement('style');
@@ -188,7 +188,7 @@ export function createWidget(shadow, config) {
   });
 
   bus.on('close', () => {
-    closeWidget();
+    destroyWidget();
   });
 
   bus.on('send', (text) => {
@@ -546,6 +546,8 @@ export function createWidget(shadow, config) {
     try { destroyHeader(); } catch { }
     try { destroyOffline(); } catch { }
     try { if (agentSocket) agentSocket.disconnect(); } catch { }
+    // Allow the host layer (init.js) to remove the DOM host element
+    try { onDestroy?.(); } catch { }
   }
 
   return {
