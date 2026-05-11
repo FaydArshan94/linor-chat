@@ -38,11 +38,10 @@ export function createSoundController({ enabled = false, volume = 0.18 } = {}) {
     return ctx;
   }
 
-  function envelope(node, peak, attack, decay) {
-    const t0 = ctx.currentTime;
-    node.gain.setValueAtTime(0, t0);
-    node.gain.linearRampToValueAtTime(peak, t0 + attack);
-    node.gain.exponentialRampToValueAtTime(0.0001, t0 + attack + decay);
+  function envelope(node, peak, attack, decay, startTime) {
+    node.gain.setValueAtTime(0, startTime);
+    node.gain.linearRampToValueAtTime(peak, startTime + attack);
+    node.gain.exponentialRampToValueAtTime(0.0001, startTime + attack + decay);
   }
 
   function tone({ freq, type = 'sine', duration = 0.12, peak = volume, glideTo = null }) {
@@ -51,15 +50,21 @@ export function createSoundController({ enabled = false, volume = 0.18 } = {}) {
       const osc = ctx.createOscillator();
       const gain = ctx.createGain();
       osc.type = type;
-      osc.frequency.setValueAtTime(freq, ctx.currentTime);
+      
+      const t0 = ctx.currentTime + 0.015; // Schedule slightly ahead
+
+      osc.frequency.setValueAtTime(freq, t0);
       if (typeof glideTo === 'number') {
-        osc.frequency.exponentialRampToValueAtTime(glideTo, ctx.currentTime + duration);
+        osc.frequency.exponentialRampToValueAtTime(glideTo, t0 + duration);
       }
-      envelope(gain, peak, 0.01, duration);
+      
+      envelope(gain, peak, 0.01, duration, t0);
+      
       osc.connect(gain).connect(ctx.destination);
-      osc.start();
-      osc.stop(ctx.currentTime + duration + 0.05);
-    } catch {
+      osc.start(t0);
+      osc.stop(t0 + duration + 0.05);
+    } catch (e) {
+      console.error('[sounds] tone error:', e);
       // Silent — sound is a nice-to-have, never break the UX.
     }
   }
