@@ -5,37 +5,57 @@ import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-// Plugin: copies index.html → dist/index.html, swapping the dev script tag
-// with the production built widget.js so Vercel can serve it as a static page.
-// Also replaces %VITE_...% env placeholders.
+/**
+ * Plugin: handles environment variable substitution in index.html
+ * and copies it to the dist folder for production deployment.
+ */
 function copyIndexPlugin() {
-  let env = {};
+  let envVars = {};
+
   return {
     name: 'copy-index-html',
+    // Capture the resolved config to load environment variables
     configResolved(config) {
-      env = loadEnv(config.mode, process.cwd());
+      envVars = loadEnv(config.mode, process.cwd());
     },
+    // Transform index.html when served in dev mode
+    transformIndexHtml(html) {
+      let output = html;
+      Object.entries(envVars).forEach(([key, value]) => {
+        if (key.startsWith('VITE_')) {
+          const regex = new RegExp(`%${key}%`, 'g');
+          output = output.replace(regex, value);
+        }
+      });
+      return output;
+    },
+    // Copy and transform index.html for production build
     closeBundle() {
-      const src = path.resolve(__dirname, 'index.html');
-      const dest = path.resolve(__dirname, 'dist', 'index.html');
-      let html = fs.readFileSync(src, 'utf-8');
+      const srcPath = path.resolve(__dirname, 'index.html');
+      const distDir = path.resolve(__dirname, 'dist');
+      const destPath = path.resolve(distDir, 'index.html');
 
-      // Replace dev-only module script with production widget
+      if (!fs.existsSync(srcPath)) return;
+      if (!fs.existsSync(distDir)) fs.mkdirSync(distDir, { recursive: true });
+
+      let html = fs.readFileSync(srcPath, 'utf-8');
+
+      // Replace dev script with production bundle
       html = html.replace(
         /<script type="module" src="\/src\/index\.js"><\/script>/,
         '<script src="./widget.js"></script>'
       );
 
-      // Replace %VITE_...% env placeholders
-      Object.entries(env).forEach(([key, value]) => {
+      // Replace placeholders with env values
+      Object.entries(envVars).forEach(([key, value]) => {
         if (key.startsWith('VITE_')) {
           const regex = new RegExp(`%${key}%`, 'g');
           html = html.replace(regex, value);
         }
       });
 
-      fs.writeFileSync(dest, html);
-      console.log('✓ dist/index.html written with env variables');
+      fs.writeFileSync(destPath, html);
+      console.log('✓ dist/index.html generated with environment variables.');
     },
   };
 }
@@ -58,6 +78,7 @@ export default defineConfig({
     sourcemap: true,
     target: 'es2017',
     outDir: 'dist',
+    emptyOutDir: true,
   },
   server: {
     port: 3000,
