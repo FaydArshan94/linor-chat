@@ -9,10 +9,11 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 // with the production built widget.js so Vercel can serve it as a static page.
 // Also replaces %VITE_...% env placeholders.
 function copyIndexPlugin() {
+  let env = {};
   return {
     name: 'copy-index-html',
     configResolved(config) {
-      this.env = loadEnv(config.mode, process.cwd());
+      env = loadEnv(config.mode, process.cwd());
     },
     closeBundle() {
       const src = path.resolve(__dirname, 'index.html');
@@ -26,7 +27,7 @@ function copyIndexPlugin() {
       );
 
       // Replace %VITE_...% env placeholders
-      Object.entries(this.env).forEach(([key, value]) => {
+      Object.entries(env).forEach(([key, value]) => {
         if (key.startsWith('VITE_')) {
           const regex = new RegExp(`%${key}%`, 'g');
           html = html.replace(regex, value);
