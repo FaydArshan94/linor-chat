@@ -316,41 +316,60 @@ exports.requestTransfer = asyncHandler(async (req, res) => {
  *   - { error: true, message } on other failures
  */
 const saveAppointment = async (apiKey, user_id, sessionId, data) => {
-  try {
-    const response = await fetch(
-      `${process.env.APPOINTMENT_SERVICE_URL}/api/appointments`,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "x-api-key": apiKey,
+  const MAX_RETRIES = 4;
+  let attempt = 0;
+
+  while (attempt < MAX_RETRIES) {
+    attempt++;
+    try {
+      const response = await fetch(
+        `${process.env.APPOINTMENT_SERVICE_URL}/api/appointments`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "x-api-key": apiKey,
+          },
+          body: JSON.stringify({ ...data, sessionId, user_id }),
         },
-        body: JSON.stringify({ ...data, sessionId, user_id }),
-      },
-    );
+      );
 
-    if (!response.ok) {
-      let body = {};
-      try { body = await response.json(); } catch { /* ignore parse errors */ }
-      logger.error("Appointment save failed: %s %s", response.status, JSON.stringify(body));
+      if (!response.ok) {
+        let body = {};
+        try { body = await response.json(); } catch { /* ignore parse errors */ }
+        
+        // If 502 (Bad Gateway) or 503/504 (cold start / timeout) on Render, retry
+        if ([502, 503, 504].includes(response.status) && attempt < MAX_RETRIES) {
+          logger.warn("Appointment save got %s on attempt %s, retrying in 4s...", response.status, attempt);
+          await new Promise(res => setTimeout(res, 4000));
+          continue;
+        }
 
-      // 409 Conflict — slot already booked
-      if (response.status === 409) {
-        return {
-          conflict: true,
-          message: body.message || "That slot is already booked. Please choose another time.",
-          availableSlots: body.availableSlots || [],
-        };
+        logger.error("Appointment save failed: %s %s", response.status, JSON.stringify(body));
+
+        // 409 Conflict — slot already booked
+        if (response.status === 409) {
+          return {
+            conflict: true,
+            message: body.message || "That slot is already booked. Please choose another time.",
+            availableSlots: body.availableSlots || [],
+          };
+        }
+
+        return { error: true, message: body.message || `HTTP ${response.status}` };
       }
 
-      return { error: true, message: body.message || `HTTP ${response.status}` };
+      const result = await response.json();
+      logger.info("Appointment saved: %s", result.data?._id);
+      return null; // success
+    } catch (err) {
+      if (attempt < MAX_RETRIES) {
+        logger.warn("Failed to save appointment (attempt %s): %s, retrying in 4s...", attempt, err.message);
+        await new Promise(res => setTimeout(res, 4000));
+        continue;
+      }
+      logger.error("Failed to save appointment after retries: %s", err.message);
+      return { error: true, message: err.message };
     }
-
-    const result = await response.json();
-    logger.info("Appointment saved: %s", result.data?._id);
-    return null; // success
-  } catch (err) {
-    logger.error("Failed to save appointment: %s", err.message);
-    return { error: true, message: err.message };
   }
 };
