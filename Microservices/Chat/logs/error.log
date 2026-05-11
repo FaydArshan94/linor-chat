@@ -1,0 +1,1 @@
+{"level":"error","message":"Appointment save failed: 403 {\"success\":false,\"message\":\"Invalid API key\"}","service":"chat-service","timestamp":"2026-05-04 10:39:27"}

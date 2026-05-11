@@ -1,0 +1,191 @@
+{"level":"info","message":"Chat service listening on port 5004  [development]","service":"chat-service","timestamp":"2026-05-04 06:06:16"}
+{"level":"info","message":"AI warmed up","service":"chat-service","timestamp":"2026-05-04 06:06:16"}
+{"level":"info","message":"Chat service listening on port 5004  [development]","service":"chat-service","timestamp":"2026-05-04 06:14:06"}
+{"level":"info","message":"AI warmed up","service":"chat-service","timestamp":"2026-05-04 06:14:06"}
+{"level":"info","message":"Chat service listening on port 5004  [development]","service":"chat-service","timestamp":"2026-05-04 06:29:57"}
+{"level":"info","message":"AI warmed up","service":"chat-service","timestamp":"2026-05-04 06:29:58"}
+{"level":"info","message":"Chat service listening on port 5004  [development]","service":"chat-service","timestamp":"2026-05-04 06:30:01"}
+{"level":"info","message":"AI warmed up","service":"chat-service","timestamp":"2026-05-04 06:30:01"}
+{"level":"info","message":"Chat service listening on port 5004  [development]","service":"chat-service","timestamp":"2026-05-04 06:31:29"}
+{"level":"info","message":"AI warmed up","service":"chat-service","timestamp":"2026-05-04 06:31:29"}
+{"level":"info","message":"Chat service listening on port 5004  [development]","service":"chat-service","timestamp":"2026-05-04 06:54:43"}
+{"level":"info","message":"AI warmed up","service":"chat-service","timestamp":"2026-05-04 06:54:43"}
+{"level":"info","message":"Redis connected","service":"chat-service","timestamp":"2026-05-04 06:54:47"}
+{"level":"info","message":"Clinic data cached in Redis","service":"chat-service","timestamp":"2026-05-04 06:55:49"}
+{"level":"info","message":"RAG found 3 relevant medical chunks","service":"chat-service","timestamp":"2026-05-04 06:55:52"}
+{"level":"info","message":"Top match: Possible urinary tract infection (score: 0.293)","service":"chat-service","timestamp":"2026-05-04 06:55:52"}
+{"level":"info","message":"Clinic data served from Redis cache","service":"chat-service","timestamp":"2026-05-04 06:56:10"}
+{"level":"info","message":"Clinic data served from Redis cache","service":"chat-service","timestamp":"2026-05-04 06:56:21"}
+{"level":"info","message":"RAG found 3 relevant medical chunks","service":"chat-service","timestamp":"2026-05-04 06:56:23"}
+{"level":"info","message":"Top match: Possible kidney stone (score: 0.372)","service":"chat-service","timestamp":"2026-05-04 06:56:23"}
+{"level":"info","message":"Clinic data served from Redis cache","service":"chat-service","timestamp":"2026-05-04 06:56:43"}
+{"level":"info","message":"Clinic data served from Redis cache","service":"chat-service","timestamp":"2026-05-04 06:56:50"}
+{"level":"info","message":"Clinic data served from Redis cache","service":"chat-service","timestamp":"2026-05-04 06:56:53"}
+{"level":"info","message":"Clinic data served from Redis cache","service":"chat-service","timestamp":"2026-05-04 06:56:56"}
+{"level":"info","message":"Clinic data served from Redis cache","service":"chat-service","timestamp":"2026-05-04 06:57:04"}
+{"level":"info","message":"Clinic data served from Redis cache","service":"chat-service","timestamp":"2026-05-04 06:57:07"}
+{"level":"info","message":"Clinic data served from Redis cache","service":"chat-service","timestamp":"2026-05-04 06:57:11"}
+{"level":"info","message":"Appointment saved: 69f7f5f02e51f67c64cc17ff","service":"chat-service","timestamp":"2026-05-04 06:57:12"}
+{"level":"info","message":"Clinic data served from Redis cache","service":"chat-service","timestamp":"2026-05-04 06:58:06"}
+{"level":"info","message":"Clinic data served from Redis cache","service":"chat-service","timestamp":"2026-05-04 06:58:15"}
+{"level":"info","message":"Clinic data served from Redis cache","service":"chat-service","timestamp":"2026-05-04 06:58:32"}
+{"level":"info","message":"Clinic data served from Redis cache","service":"chat-service","timestamp":"2026-05-04 06:58:46"}
+{"level":"info","message":"Clinic data served from Redis cache","service":"chat-service","timestamp":"2026-05-04 06:58:59"}
+{"level":"info","message":"Clinic data served from Redis cache","service":"chat-service","timestamp":"2026-05-04 06:59:21"}
+{"level":"info","message":"Clinic data served from Redis cache","service":"chat-service","timestamp":"2026-05-04 07:04:33"}
+{"level":"info","message":"Clinic data served from Redis cache","service":"chat-service","timestamp":"2026-05-04 07:04:37"}
+{"level":"info","message":"Clinic data served from Redis cache","service":"chat-service","timestamp":"2026-05-04 07:04:53"}
+{"level":"info","message":"Clinic data served from Redis cache","service":"chat-service","timestamp":"2026-05-04 07:05:17"}
+{"level":"info","message":"Clinic data served from Redis cache","service":"chat-service","timestamp":"2026-05-04 07:05:18"}
+{"level":"info","message":"Clinic data served from Redis cache","service":"chat-service","timestamp":"2026-05-04 07:05:20"}
+{"level":"info","message":"Clinic data served from Redis cache","service":"chat-service","timestamp":"2026-05-04 07:05:21"}
+{"level":"info","message":"Appointment saved: 69f7f7da2e51f67c64cc1800","service":"chat-service","timestamp":"2026-05-04 07:05:22"}
+{"level":"info","message":"Clinic data served from Redis cache","service":"chat-service","timestamp":"2026-05-04 07:05:27"}
+{"level":"info","message":"Clinic data served from Redis cache","service":"chat-service","timestamp":"2026-05-04 07:05:33"}
+{"level":"info","message":"Clinic data served from Redis cache","service":"chat-service","timestamp":"2026-05-04 07:05:41"}
+{"level":"info","message":"Clinic data served from Redis cache","service":"chat-service","timestamp":"2026-05-04 07:05:47"}
+{"level":"info","message":"Chat service listening on port 5004  [development]","service":"chat-service","timestamp":"2026-05-04 07:48:27"}
+{"level":"info","message":"AI warmed up","service":"chat-service","timestamp":"2026-05-04 07:48:27"}
+{"level":"info","message":"Chat service listening on port 5004  [development]","service":"chat-service","timestamp":"2026-05-04 07:49:05"}
+{"level":"info","message":"AI warmed up","service":"chat-service","timestamp":"2026-05-04 07:49:06"}
+{"level":"info","message":"Chat service listening on port 5004  [development]","service":"chat-service","timestamp":"2026-05-04 07:49:20"}
+{"level":"info","message":"AI warmed up","service":"chat-service","timestamp":"2026-05-04 07:49:21"}
+{"level":"info","message":"Chat service listening on port 5004  [development]","service":"chat-service","timestamp":"2026-05-04 07:49:38"}
+{"level":"info","message":"AI warmed up","service":"chat-service","timestamp":"2026-05-04 07:49:39"}
+{"level":"info","message":"Chat service listening on port 5004  [development]","service":"chat-service","timestamp":"2026-05-04 07:49:40"}
+{"level":"info","message":"AI warmed up","service":"chat-service","timestamp":"2026-05-04 07:49:40"}
+{"level":"info","message":"Chat service listening on port 5004  [development]","service":"chat-service","timestamp":"2026-05-04 07:51:10"}
+{"level":"info","message":"AI warmed up","service":"chat-service","timestamp":"2026-05-04 07:51:11"}
+{"level":"info","message":"Voice socket connected: qO8eRsJhHgurFekHAAAB","service":"chat-service","timestamp":"2026-05-04 07:56:14"}
+{"level":"info","message":"Voice socket connected: D_z9e-nC7Xb-1N7yAAAD","service":"chat-service","timestamp":"2026-05-04 07:56:14"}
+{"level":"info","message":"Voice socket disconnected: D_z9e-nC7Xb-1N7yAAAD","service":"chat-service","timestamp":"2026-05-04 07:56:50"}
+{"level":"info","message":"Voice socket connected: 1RFeuejUOHojlX-0AAAF","service":"chat-service","timestamp":"2026-05-04 07:56:51"}
+{"level":"info","message":"Voice socket disconnected: 1RFeuejUOHojlX-0AAAF","service":"chat-service","timestamp":"2026-05-04 07:56:56"}
+{"level":"info","message":"Voice socket connected: 4ww9z-BCl0T4B8R5AAAH","service":"chat-service","timestamp":"2026-05-04 07:56:56"}
+{"level":"info","message":"Voice socket disconnected: 4ww9z-BCl0T4B8R5AAAH","service":"chat-service","timestamp":"2026-05-04 07:56:57"}
+{"level":"info","message":"Voice socket connected: hk671QVGPAJrOvJPAAAJ","service":"chat-service","timestamp":"2026-05-04 07:56:57"}
+{"level":"info","message":"Voice socket disconnected: qO8eRsJhHgurFekHAAAB","service":"chat-service","timestamp":"2026-05-04 07:56:59"}
+{"level":"info","message":"Redis connected","service":"chat-service","timestamp":"2026-05-04 07:57:10"}
+{"level":"info","message":"Clinic data served from Redis cache","service":"chat-service","timestamp":"2026-05-04 07:57:10"}
+{"level":"info","message":"Clinic data served from Redis cache","service":"chat-service","timestamp":"2026-05-04 08:00:15"}
+{"level":"info","message":"Voice socket disconnected: hk671QVGPAJrOvJPAAAJ","service":"chat-service","timestamp":"2026-05-04 08:00:40"}
+{"level":"info","message":"Voice socket connected: J3giuaP11Q4v39GvAAAL","service":"chat-service","timestamp":"2026-05-04 08:00:52"}
+{"level":"info","message":"Voice socket disconnected: J3giuaP11Q4v39GvAAAL","service":"chat-service","timestamp":"2026-05-04 08:01:34"}
+{"level":"info","message":"Voice socket connected: jcWG8zZMNcN2zuuEAAAN","service":"chat-service","timestamp":"2026-05-04 08:01:34"}
+{"level":"info","message":"Voice socket disconnected: jcWG8zZMNcN2zuuEAAAN","service":"chat-service","timestamp":"2026-05-04 08:01:49"}
+{"level":"info","message":"Voice socket connected: NG0XjuHx5rrEl_gcAAAP","service":"chat-service","timestamp":"2026-05-04 08:01:49"}
+{"level":"info","message":"Voice socket disconnected: NG0XjuHx5rrEl_gcAAAP","service":"chat-service","timestamp":"2026-05-04 08:01:58"}
+{"level":"info","message":"Voice socket connected: dKSaEBFTRstHxcHiAAAR","service":"chat-service","timestamp":"2026-05-04 08:01:59"}
+{"level":"info","message":"Voice socket disconnected: dKSaEBFTRstHxcHiAAAR","service":"chat-service","timestamp":"2026-05-04 08:02:40"}
+{"level":"info","message":"Voice socket connected: Rfwo4W0DLmsAKxRKAAAT","service":"chat-service","timestamp":"2026-05-04 08:02:40"}
+{"level":"info","message":"Voice socket disconnected: Rfwo4W0DLmsAKxRKAAAT","service":"chat-service","timestamp":"2026-05-04 08:03:42"}
+{"level":"info","message":"Voice socket connected: JBNHYhuOjZEsVdCIAAAV","service":"chat-service","timestamp":"2026-05-04 08:03:42"}
+{"level":"info","message":"Voice socket disconnected: JBNHYhuOjZEsVdCIAAAV","service":"chat-service","timestamp":"2026-05-04 08:03:51"}
+{"level":"info","message":"Voice socket connected: qDPQbt4sNYlSxvTLAAAX","service":"chat-service","timestamp":"2026-05-04 08:03:51"}
+{"level":"info","message":"Voice socket disconnected: qDPQbt4sNYlSxvTLAAAX","service":"chat-service","timestamp":"2026-05-04 08:03:59"}
+{"level":"info","message":"Voice socket connected: mnJGOlQFS8oKGtIIAAAZ","service":"chat-service","timestamp":"2026-05-04 08:03:59"}
+{"level":"info","message":"Voice socket disconnected: mnJGOlQFS8oKGtIIAAAZ","service":"chat-service","timestamp":"2026-05-04 08:04:04"}
+{"level":"info","message":"Voice socket connected: _uSASsQ9g2IpDhSYAAAb","service":"chat-service","timestamp":"2026-05-04 08:04:04"}
+{"level":"info","message":"Clinic data served from Redis cache","service":"chat-service","timestamp":"2026-05-04 08:04:22"}
+{"level":"info","message":"Clinic data served from Redis cache","service":"chat-service","timestamp":"2026-05-04 08:04:33"}
+{"level":"info","message":"Voice socket disconnected: _uSASsQ9g2IpDhSYAAAb","service":"chat-service","timestamp":"2026-05-04 08:06:05"}
+{"level":"info","message":"Voice socket connected: JwAxNQzvgXfUuhjoAAAd","service":"chat-service","timestamp":"2026-05-04 08:06:05"}
+{"level":"info","message":"Voice socket disconnected: JwAxNQzvgXfUuhjoAAAd","service":"chat-service","timestamp":"2026-05-04 08:06:12"}
+{"level":"info","message":"Voice socket connected: OQhe48hRpNLnrAMGAAAf","service":"chat-service","timestamp":"2026-05-04 08:06:12"}
+{"level":"info","message":"Voice socket disconnected: OQhe48hRpNLnrAMGAAAf","service":"chat-service","timestamp":"2026-05-04 08:06:19"}
+{"level":"info","message":"Voice socket connected: 3Y5xiu-rB1zt3OL4AAAh","service":"chat-service","timestamp":"2026-05-04 08:06:19"}
+{"level":"info","message":"Voice socket disconnected: 3Y5xiu-rB1zt3OL4AAAh","service":"chat-service","timestamp":"2026-05-04 08:06:23"}
+{"level":"info","message":"Voice socket connected: 14wpUuVK32F08vSMAAAj","service":"chat-service","timestamp":"2026-05-04 08:06:23"}
+{"level":"info","message":"Voice socket disconnected: 14wpUuVK32F08vSMAAAj","service":"chat-service","timestamp":"2026-05-04 08:06:26"}
+{"level":"info","message":"Voice socket connected: hxhN99lwkPyE4Dp3AAAl","service":"chat-service","timestamp":"2026-05-04 08:06:26"}
+{"level":"info","message":"Voice socket disconnected: hxhN99lwkPyE4Dp3AAAl","service":"chat-service","timestamp":"2026-05-04 08:06:32"}
+{"level":"info","message":"Voice socket connected: UmwP00XJz2LgGxwNAAAn","service":"chat-service","timestamp":"2026-05-04 08:06:32"}
+{"level":"info","message":"Voice socket disconnected: UmwP00XJz2LgGxwNAAAn","service":"chat-service","timestamp":"2026-05-04 08:07:09"}
+{"level":"info","message":"Voice socket connected: hip3X9LOCneX3XGxAAAp","service":"chat-service","timestamp":"2026-05-04 08:07:09"}
+{"level":"info","message":"Voice socket disconnected: hip3X9LOCneX3XGxAAAp","service":"chat-service","timestamp":"2026-05-04 08:09:54"}
+{"level":"info","message":"Voice socket connected: H_-ceERkt7DIimC6AAAr","service":"chat-service","timestamp":"2026-05-04 08:09:54"}
+{"level":"info","message":"Voice socket disconnected: H_-ceERkt7DIimC6AAAr","service":"chat-service","timestamp":"2026-05-04 08:10:00"}
+{"level":"info","message":"Voice socket connected: AJUizE6VX-nvHZ6eAAAt","service":"chat-service","timestamp":"2026-05-04 08:10:00"}
+{"level":"info","message":"Voice socket disconnected: AJUizE6VX-nvHZ6eAAAt","service":"chat-service","timestamp":"2026-05-04 08:10:09"}
+{"level":"info","message":"Voice socket connected: Sv4DsTmr9MpQXF5JAAAv","service":"chat-service","timestamp":"2026-05-04 08:10:09"}
+{"level":"info","message":"Voice socket disconnected: Sv4DsTmr9MpQXF5JAAAv","service":"chat-service","timestamp":"2026-05-04 08:11:34"}
+{"level":"info","message":"Voice socket connected: _1AR7Q0eIatkyTxdAAAx","service":"chat-service","timestamp":"2026-05-04 08:11:34"}
+{"level":"info","message":"Voice socket disconnected: _1AR7Q0eIatkyTxdAAAx","service":"chat-service","timestamp":"2026-05-04 08:13:02"}
+{"level":"info","message":"Voice socket connected: Dz6DIOYpieXdBxW8AAAz","service":"chat-service","timestamp":"2026-05-04 08:13:02"}
+{"level":"info","message":"Voice socket disconnected: Dz6DIOYpieXdBxW8AAAz","service":"chat-service","timestamp":"2026-05-04 08:13:21"}
+{"level":"info","message":"Voice socket connected: bfPegY5j4r1oQ3a0AAA1","service":"chat-service","timestamp":"2026-05-04 08:13:21"}
+{"level":"info","message":"Clinic data served from Redis cache","service":"chat-service","timestamp":"2026-05-04 08:13:28"}
+{"level":"info","message":"Clinic data served from Redis cache","service":"chat-service","timestamp":"2026-05-04 08:13:36"}
+{"level":"info","message":"Voice socket disconnected: bfPegY5j4r1oQ3a0AAA1","service":"chat-service","timestamp":"2026-05-04 08:14:28"}
+{"level":"info","message":"Voice socket connected: biKp838x7PN9cFJnAAA3","service":"chat-service","timestamp":"2026-05-04 08:14:28"}
+{"level":"info","message":"Voice socket connected: b_gdFMQq2_GMeJI2AAA5","service":"chat-service","timestamp":"2026-05-04 08:14:28"}
+{"level":"info","message":"Voice socket disconnected: b_gdFMQq2_GMeJI2AAA5","service":"chat-service","timestamp":"2026-05-04 08:14:31"}
+{"level":"info","message":"Clinic data served from Redis cache","service":"chat-service","timestamp":"2026-05-04 08:19:05"}
+{"level":"info","message":"Clinic data served from Redis cache","service":"chat-service","timestamp":"2026-05-04 08:19:36"}
+{"level":"info","message":"Voice socket disconnected: biKp838x7PN9cFJnAAA3","service":"chat-service","timestamp":"2026-05-04 08:19:41"}
+{"level":"info","message":"Voice socket connected: gygoZf7HDyXy-8v0AAA7","service":"chat-service","timestamp":"2026-05-04 08:19:41"}
+{"level":"info","message":"Clinic data served from Redis cache","service":"chat-service","timestamp":"2026-05-04 08:19:57"}
+{"level":"info","message":"Voice socket disconnected: gygoZf7HDyXy-8v0AAA7","service":"chat-service","timestamp":"2026-05-04 08:20:49"}
+{"level":"info","message":"Voice socket connected: E4-cJ94UzqI-1q_DAAA9","service":"chat-service","timestamp":"2026-05-04 08:20:49"}
+{"level":"info","message":"Voice socket disconnected: E4-cJ94UzqI-1q_DAAA9","service":"chat-service","timestamp":"2026-05-04 08:20:56"}
+{"level":"info","message":"Voice socket connected: Qpqh3oIewGoOU2NfAAA_","service":"chat-service","timestamp":"2026-05-04 08:20:56"}
+{"level":"info","message":"Voice socket disconnected: Qpqh3oIewGoOU2NfAAA_","service":"chat-service","timestamp":"2026-05-04 08:21:02"}
+{"level":"info","message":"Voice socket connected: r-EXx3NddH8HVXobAABB","service":"chat-service","timestamp":"2026-05-04 08:21:02"}
+{"level":"info","message":"Voice socket disconnected: r-EXx3NddH8HVXobAABB","service":"chat-service","timestamp":"2026-05-04 08:21:08"}
+{"level":"info","message":"Voice socket connected: ac8sJMyhbSUe9gE0AABD","service":"chat-service","timestamp":"2026-05-04 08:21:08"}
+{"level":"info","message":"Voice socket disconnected: ac8sJMyhbSUe9gE0AABD","service":"chat-service","timestamp":"2026-05-04 08:21:45"}
+{"level":"info","message":"Voice socket connected: QfPm8VTO6IZ1VxwiAABF","service":"chat-service","timestamp":"2026-05-04 08:21:45"}
+{"level":"info","message":"Voice socket disconnected: QfPm8VTO6IZ1VxwiAABF","service":"chat-service","timestamp":"2026-05-04 08:21:50"}
+{"level":"info","message":"Voice socket connected: IKN90hFndK2-xbjWAABH","service":"chat-service","timestamp":"2026-05-04 08:21:50"}
+{"level":"info","message":"Clinic data served from Redis cache","service":"chat-service","timestamp":"2026-05-04 08:22:03"}
+{"level":"info","message":"Clinic data served from Redis cache","service":"chat-service","timestamp":"2026-05-04 08:22:12"}
+{"level":"info","message":"Voice socket disconnected: IKN90hFndK2-xbjWAABH","service":"chat-service","timestamp":"2026-05-04 08:31:46"}
+{"level":"info","message":"Voice socket connected: IGYGUyrCYIx1dfdxAABJ","service":"chat-service","timestamp":"2026-05-04 08:31:46"}
+{"level":"info","message":"Clinic data served from Redis cache","service":"chat-service","timestamp":"2026-05-04 08:32:23"}
+{"level":"info","message":"Clinic data served from Redis cache","service":"chat-service","timestamp":"2026-05-04 08:32:31"}
+{"level":"info","message":"Voice socket disconnected: IGYGUyrCYIx1dfdxAABJ","service":"chat-service","timestamp":"2026-05-04 08:33:06"}
+{"level":"info","message":"Voice socket connected: 6u0qnlzPk1fd-QrGAABL","service":"chat-service","timestamp":"2026-05-04 08:33:06"}
+{"level":"info","message":"Voice socket disconnected: 6u0qnlzPk1fd-QrGAABL","service":"chat-service","timestamp":"2026-05-04 08:34:05"}
+{"level":"info","message":"Voice socket connected: tT-BtIZgVD208BmtAABN","service":"chat-service","timestamp":"2026-05-04 08:34:12"}
+{"level":"info","message":"Voice socket disconnected: tT-BtIZgVD208BmtAABN","service":"chat-service","timestamp":"2026-05-04 08:34:19"}
+{"level":"info","message":"Voice socket connected: KwXpmWPsXDCFj2AhAABP","service":"chat-service","timestamp":"2026-05-04 08:34:19"}
+{"level":"info","message":"Clinic data served from Redis cache","service":"chat-service","timestamp":"2026-05-04 08:34:33"}
+{"level":"info","message":"Clinic data served from Redis cache","service":"chat-service","timestamp":"2026-05-04 08:34:59"}
+{"level":"info","message":"Voice socket connected: lMnRXuNP8VeIB5a1AABR","service":"chat-service","timestamp":"2026-05-04 08:35:39"}
+{"level":"info","message":"Clinic data served from Redis cache","service":"chat-service","timestamp":"2026-05-04 08:35:49"}
+{"level":"info","message":"Voice socket disconnected: KwXpmWPsXDCFj2AhAABP","service":"chat-service","timestamp":"2026-05-04 08:40:29"}
+{"level":"info","message":"Voice socket disconnected: lMnRXuNP8VeIB5a1AABR","service":"chat-service","timestamp":"2026-05-04 08:40:29"}
+{"level":"info","message":"Voice socket connected: kJbx2g2PjBqopBqMAABT","service":"chat-service","timestamp":"2026-05-04 08:40:29"}
+{"level":"info","message":"Voice socket connected: epIzGHwEVcu4P-o3AABV","service":"chat-service","timestamp":"2026-05-04 08:40:30"}
+{"level":"info","message":"Voice socket disconnected: kJbx2g2PjBqopBqMAABT","service":"chat-service","timestamp":"2026-05-04 08:40:42"}
+{"level":"info","message":"Voice socket connected: nRRPa19mo_aUv7FFAABX","service":"chat-service","timestamp":"2026-05-04 08:40:43"}
+{"level":"info","message":"Clinic data served from Redis cache","service":"chat-service","timestamp":"2026-05-04 08:40:52"}
+{"level":"info","message":"Voice socket disconnected: epIzGHwEVcu4P-o3AABV","service":"chat-service","timestamp":"2026-05-04 08:41:14"}
+{"level":"info","message":"Voice socket disconnected: nRRPa19mo_aUv7FFAABX","service":"chat-service","timestamp":"2026-05-04 08:41:14"}
+{"level":"info","message":"Chat service listening on port 5004  [development]","service":"chat-service","timestamp":"2026-05-04 08:41:19"}
+{"level":"info","message":"AI warmed up","service":"chat-service","timestamp":"2026-05-04 08:41:19"}
+{"level":"info","message":"Chat service listening on port 5004  [development]","service":"chat-service","timestamp":"2026-05-04 08:41:23"}
+{"level":"info","message":"AI warmed up","service":"chat-service","timestamp":"2026-05-04 08:41:23"}
+{"level":"info","message":"Redis connected","service":"chat-service","timestamp":"2026-05-04 10:32:50"}
+{"level":"info","message":"Clinic data cached in Redis","service":"chat-service","timestamp":"2026-05-04 10:38:50"}
+{"level":"info","message":"Clinic data served from Redis cache","service":"chat-service","timestamp":"2026-05-04 10:38:55"}
+{"level":"info","message":"Clinic data served from Redis cache","service":"chat-service","timestamp":"2026-05-04 10:39:08"}
+{"level":"info","message":"Clinic data served from Redis cache","service":"chat-service","timestamp":"2026-05-04 10:39:14"}
+{"level":"info","message":"Clinic data served from Redis cache","service":"chat-service","timestamp":"2026-05-04 10:39:18"}
+{"level":"info","message":"Clinic data served from Redis cache","service":"chat-service","timestamp":"2026-05-04 10:39:23"}
+{"level":"info","message":"Clinic data served from Redis cache","service":"chat-service","timestamp":"2026-05-04 10:39:26"}
+{"level":"error","message":"Appointment save failed: 403 {\"success\":false,\"message\":\"Invalid API key\"}","service":"chat-service","timestamp":"2026-05-04 10:39:27"}
+{"level":"info","message":"Clinic data served from Redis cache","service":"chat-service","timestamp":"2026-05-04 10:43:24"}
+{"level":"info","message":"Clinic data cached in Redis","service":"chat-service","timestamp":"2026-05-04 10:44:33"}
+{"level":"info","message":"Clinic data served from Redis cache","service":"chat-service","timestamp":"2026-05-04 10:44:40"}
+{"level":"info","message":"Clinic data served from Redis cache","service":"chat-service","timestamp":"2026-05-04 10:45:01"}
+{"level":"info","message":"Clinic data served from Redis cache","service":"chat-service","timestamp":"2026-05-04 10:46:46"}
+{"level":"info","message":"Clinic data served from Redis cache","service":"chat-service","timestamp":"2026-05-04 10:51:01"}
+{"level":"info","message":"Chat service listening on port 5004  [development]","service":"chat-service","timestamp":"2026-05-04 17:20:02"}
+{"level":"info","message":"AI warmed up","service":"chat-service","timestamp":"2026-05-04 17:20:02"}
+{"host":"ac-onxbwfi-shard-00-00.ol8ez4d.mongodb.net","level":"info","message":"MongoDB connected successfully","service":"chat-service","timestamp":"2026-05-04 17:20:04"}
+{"level":"info","message":"Redis connected","service":"chat-service","timestamp":"2026-05-04 17:20:39"}
+{"level":"info","message":"Clinic data served from Redis cache","service":"chat-service","timestamp":"2026-05-04 17:20:39"}
+{"level":"info","message":"RAG found 3 relevant medical chunks","service":"chat-service","timestamp":"2026-05-04 17:20:42"}
+{"level":"info","message":"Top match: Possible kidney stone (score: 0.421)","service":"chat-service","timestamp":"2026-05-04 17:20:42"}
+{"level":"info","message":"SIGINT received. Shutting down gracefully...","service":"chat-service","timestamp":"2026-05-04 17:22:50"}
