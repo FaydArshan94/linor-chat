@@ -41,7 +41,7 @@ export const DEFAULTS = {
   ttsDefaultOn: false,         // initial TTS state
   voiceLang: 'en-US',          // BCP-47 language tag for STT + TTS
   // Subtle UI sound effects on send / receive / error
-  enableSounds: false,
+  enableSounds: true,
   soundVolume: 0.18,           // 0..1
 };
 
