@@ -1,0 +1,66 @@
+[00:33:15.271] INFO  Server running in development mode on port 5000
+[00:33:17.771] INFO  MongoDB connected successfully {"host":"ac-onxbwfi-shard-00-01.ol8ez4d.mongodb.net"}
+[03:59:15.301] INFO  Server running in development mode on port 5000
+[03:59:17.847] INFO  MongoDB connected successfully {"host":"ac-onxbwfi-shard-00-02.ol8ez4d.mongodb.net"}
+[04:11:01.909] INFO  Server running in development mode on port 5000
+[04:11:04.409] INFO  MongoDB connected successfully {"host":"ac-onxbwfi-shard-00-01.ol8ez4d.mongodb.net"}
+[04:11:41.274] INFO  Server running in development mode on port 5000
+[04:11:44.382] INFO  Server running in development mode on port 5000
+[04:11:47.703] INFO  Server running in development mode on port 5000
+[04:11:50.299] INFO  MongoDB connected successfully {"host":"ac-onxbwfi-shard-00-01.ol8ez4d.mongodb.net"}
+[04:14:25.120] INFO  Server running in development mode on port 5000
+[04:14:27.614] INFO  MongoDB connected successfully {"host":"ac-onxbwfi-shard-00-00.ol8ez4d.mongodb.net"}
+[04:14:29.194] INFO  Server running in development mode on port 5000
+[04:14:31.723] INFO  MongoDB connected successfully {"host":"ac-onxbwfi-shard-00-02.ol8ez4d.mongodb.net"}
+[04:14:37.399] INFO  Server running in development mode on port 5000
+[04:14:39.922] INFO  MongoDB connected successfully {"host":"ac-onxbwfi-shard-00-00.ol8ez4d.mongodb.net"}
+[04:17:50.831] INFO  Server running in development mode on port 5000
+[04:17:53.353] INFO  MongoDB connected successfully {"host":"ac-onxbwfi-shard-00-01.ol8ez4d.mongodb.net"}
+[04:17:56.566] INFO  Server running in development mode on port 5000
+[04:17:59.063] INFO  MongoDB connected successfully {"host":"ac-onxbwfi-shard-00-02.ol8ez4d.mongodb.net"}
+[04:18:03.175] INFO  Server running in development mode on port 5000
+[04:18:05.691] INFO  MongoDB connected successfully {"host":"ac-onxbwfi-shard-00-01.ol8ez4d.mongodb.net"}
+[04:18:18.384] INFO  Server running in development mode on port 5000
+[04:18:20.872] INFO  MongoDB connected successfully {"host":"ac-onxbwfi-shard-00-00.ol8ez4d.mongodb.net"}
+[04:18:26.170] ERROR Unhandled error {"message":"Illegal arguments: undefined, number","stack":"Error: Illegal arguments: undefined, number\n    at _async (D:\\linor-ai-receptionist\\Microservices\\AUTH\\node_modules\\bcryptjs\\umd\\index.js:233:15)\n    at D:\\linor-ai-receptionist\\Microservices\\AUTH\\node_modules\\bcryptjs\\umd\\index.js:245:11\n    at new Promise (<anonymous>)\n    at Object.hash (D:\\linor-ai-receptionist\\Microservices\\AUTH\\node_modules\\bcryptjs\\umd\\index.js:244:16)\n    at model.<anonymous> (D:\\linor-ai-receptionist\\Microservices\\AUTH\\src\\model\\user.model.js:59:32)\n    at Kareem.execPre (D:\\linor-ai-receptionist\\Microservices\\AUTH\\node_modules\\kareem\\index.js:59:39)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","name":"Error"}
+[04:19:18.325] INFO  Server running in development mode on port 5000
+[04:19:20.797] INFO  MongoDB connected successfully {"host":"ac-onxbwfi-shard-00-01.ol8ez4d.mongodb.net"}
+[04:19:22.999] INFO  Server running in development mode on port 5000
+[04:19:25.495] INFO  MongoDB connected successfully {"host":"ac-onxbwfi-shard-00-01.ol8ez4d.mongodb.net"}
+[04:19:28.878] INFO  Server running in development mode on port 5000
+[04:19:31.322] ERROR Unhandled error {"message":"Bad Request","stack":"TokenError: Bad Request\n    at OAuth2Strategy.parseErrorResponse (D:\\linor-ai-receptionist\\Microservices\\AUTH\\node_modules\\passport-oauth2\\lib\\strategy.js:373:12)\n    at OAuth2Strategy._createOAuthError (D:\\linor-ai-receptionist\\Microservices\\AUTH\\node_modules\\passport-oauth2\\lib\\strategy.js:420:16)\n    at D:\\linor-ai-receptionist\\Microservices\\AUTH\\node_modules\\passport-oauth2\\lib\\strategy.js:177:45\n    at D:\\linor-ai-receptionist\\Microservices\\AUTH\\node_modules\\oauth\\lib\\oauth2.js:196:18\n    at passBackControl (D:\\linor-ai-receptionist\\Microservices\\AUTH\\node_modules\\oauth\\lib\\oauth2.js:132:9)\n    at IncomingMessage.<anonymous> (D:\\linor-ai-receptionist\\Microservices\\AUTH\\node_modules\\oauth\\lib\\oauth2.js:157:7)\n    at IncomingMessage.emit (node:events:530:35)\n    at endReadableNT (node:internal/streams/readable:1698:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)","name":"TokenError"}
+[04:19:31.440] INFO  MongoDB connected successfully {"host":"ac-onxbwfi-shard-00-00.ol8ez4d.mongodb.net"}
+[04:21:34.232] INFO  Server running in development mode on port 5000
+[04:21:36.705] INFO  MongoDB connected successfully {"host":"ac-onxbwfi-shard-00-00.ol8ez4d.mongodb.net"}
+[04:21:42.614] INFO  Server running in development mode on port 5000
+[04:21:45.102] INFO  MongoDB connected successfully {"host":"ac-onxbwfi-shard-00-00.ol8ez4d.mongodb.net"}
+[05:03:34.470] INFO  User logged in successfully {"email":"harsh@test2.com","userId":"69f43f4edd5c7779d25b30df"}
+[06:59:46.436] INFO  Server running in development mode on port 5000
+[06:59:48.946] INFO  MongoDB connected successfully {"host":"ac-onxbwfi-shard-00-01.ol8ez4d.mongodb.net"}
+[07:03:04.404] INFO  Server running in production mode on port https://69f8418b2d5c30b7b5a15a35--dulcet-frangollo-f1dfec.netlify.app/
+[07:03:06.904] INFO  MongoDB connected successfully {"host":"ac-onxbwfi-shard-00-02.ol8ez4d.mongodb.net"}
+[07:03:55.284] INFO  Server running in production mode on port https://69f8418b2d5c30b7b5a15a35--dulcet-frangollo-f1dfec.netlify.app/
+[07:03:57.757] INFO  MongoDB connected successfully {"host":"ac-onxbwfi-shard-00-02.ol8ez4d.mongodb.net"}
+[07:06:49.744] INFO  Server running in development mode on port 5000
+[07:06:52.239] INFO  MongoDB connected successfully {"host":"ac-onxbwfi-shard-00-02.ol8ez4d.mongodb.net"}
+[07:13:49.136] INFO  Server running in development mode on port 5000
+[07:13:51.617] INFO  MongoDB connected successfully {"host":"ac-onxbwfi-shard-00-01.ol8ez4d.mongodb.net"}
+[08:00:00.025] INFO  Server running in development mode on port 5000
+[08:00:02.589] INFO  MongoDB connected successfully {"host":"ac-onxbwfi-shard-00-02.ol8ez4d.mongodb.net"}
+[08:00:27.542] INFO  Server running in development mode on port 5000
+[08:00:29.980] INFO  MongoDB connected successfully {"host":"ac-onxbwfi-shard-00-00.ol8ez4d.mongodb.net"}
+[08:00:39.396] INFO  Server running in development mode on port 5000
+[08:00:42.827] INFO  Server running in development mode on port 5000
+[08:00:45.300] INFO  MongoDB connected successfully {"host":"ac-onxbwfi-shard-00-02.ol8ez4d.mongodb.net"}
+[08:07:34.505] INFO  Server running in development mode on port 5000
+[08:07:37.016] INFO  MongoDB connected successfully {"host":"ac-onxbwfi-shard-00-02.ol8ez4d.mongodb.net"}
+[08:29:25.612] INFO  Server running in development mode on port 5000
+[08:29:28.341] INFO  MongoDB connected successfully {"host":"ac-onxbwfi-shard-00-02.ol8ez4d.mongodb.net"}
+[08:29:54.137] INFO  Server running in development mode on port 5000
+[08:29:56.615] INFO  MongoDB connected successfully {"host":"ac-onxbwfi-shard-00-02.ol8ez4d.mongodb.net"}
+[08:30:48.535] INFO  Server running in development mode on port 5000
+[08:30:51.015] INFO  MongoDB connected successfully {"host":"ac-onxbwfi-shard-00-01.ol8ez4d.mongodb.net"}
+[08:43:31.657] INFO  Server running in development mode on port 5000
+[08:43:34.122] INFO  MongoDB connected successfully {"host":"ac-onxbwfi-shard-00-02.ol8ez4d.mongodb.net"}
+[10:01:02.129] INFO  Server running in development mode on port 5000
+[10:01:04.622] INFO  MongoDB connected successfully {"host":"ac-onxbwfi-shard-00-00.ol8ez4d.mongodb.net"}
