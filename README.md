@@ -2,6 +2,11 @@
 
 Welcome to the **Linor** monorepo! Linor is a powerful, production-ready AI Receptionist platform designed to seamlessly integrate into any website. It bridges the gap between businesses and their customers by providing a 24/7 intelligent, conversational AI capable of handling inquiries, booking appointments, and offering voice-enabled interactions.
 
+<p align="center">
+  <img width="1033" height="489" alt="image" src="https://github.com/user-attachments/assets/94e4e194-88df-4c68-b595-9b9506ae95c9" />
+</p>
+
+
 ---
 
 ## 🌟 Why Linor is Worthy
